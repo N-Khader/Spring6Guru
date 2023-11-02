@@ -73,6 +73,9 @@ public class BootstrapData implements CommandLineRunner {
         //Creating the relationship between Author, Book and Publisher
         nizarSaved.getBooks().add(javaBookSaved);
         khaledSaved.getBooks().add(oraBookSaved);
+        javaBookSaved.getAuthors().add(nizarSaved);
+        oraBookSaved.getAuthors().add(khaledSaved);
+
         javaBookSaved.setPublisher(savedPublisher);
         oraBookSaved.setPublisher(savedPublisher);
 
